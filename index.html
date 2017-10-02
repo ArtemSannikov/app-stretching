@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Растяжка. Упражнения на растяжку.</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/my-theme.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<!-- cordova js -->
+	<script src="cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home" data-theme="a">
+
+	<div data-role="header">
+		<a href="#sidebar" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true">Меню</a>
+		<h1>STRETCHING GURU</h1>
+
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<div data-role="panel" data-display="overlay" data-position="left" id="sidebar">
+			<ul data-role="listview">
+				<li data-icon="false"><a href="index.html" data-transition="none">Главная</a></li>
+				<li data-icon="false"><a href="content/main/author.html" data-transition="none">Об авторе</a></li>
+				<li data-icon="false"><a href="content/main/contact.html" data-transition="none">Контакты</a></li>
+				<li data-icon="false"><a href="content/main/donate.html" data-transition="none">Поддержать проект</a></li>
+				<li data-icon="delete" class=""><a data-rel="close">Закрыть панель</a></li>
+			</ul>
+		</div>
+
+		<center><img src="images/logo.png"></center>
+		<br/><br/>
+
+		<ul data-role="listview"><!-- data-inset="true" -->
+			<li data-icon="false">
+				<a href="content/main/.html" data-transition="none" data-ajax="true">
+				<img src="images/icon/main/exercise.png">
+					<h2>Упражнения</h2>
+					<p>Разминка, растяжка и др.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="content/main/.html" data-transition="none" data-ajax="true">
+				<img src="images/icon/main/program-training.png">
+					<h2>Программы тренировок</h2>
+					<p>Готовые тренировки.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="content/main/.html" data-transition="none" data-ajax="true">
+				<img src="images/icon/main/article.png">
+					<h2>Статьи</h2>
+					<p>Расширяющие кругозор.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="content/main/free.html" data-transition="none" data-ajax="true">
+				<img src="images/icon/main/free.png">
+					<h2>Бесплатный материал</h2>
+					<p>Книги, графики и др.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="content/main/faq.html" data-transition="none" data-ajax="true">
+				<img src="images/icon/main/faq.png">
+					<h2>F.A.Q</h2>
+					<p>Ответы на вопросы.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="https://play.google.com/store/apps/details?id=stretching.guru" data-transition="none" data-ajax="true">
+				<img src="images/icon/main/reviews.png">
+					<h2>Оставить отзыв</h2>
+					<p>Поставьте 5 звёзд.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="content/main/about.html" data-transition="none" data-ajax="true">
+				<img src="images/icon/main/about.png">
+					<h2>О приложении</h2>
+					<p>Информация об авторах.</p>
+				</a>
+			</li>
+		</ul>
+
+	</div>
+
+</div>
+
+</body>
+</html>
