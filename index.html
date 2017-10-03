@@ -24,7 +24,7 @@
 <div data-role="page" id="home" data-theme="a">
 
 	<div data-role="header">
-		<a href="#sidebar" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true">Меню</a>
+		<a href="#sidebar" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right">Меню</a>
 		<h1>STRETCHING GURU</h1>
 
 	</div>
@@ -32,15 +32,19 @@
 	<div data-role="main" class="ui-content">
 
 		<div data-role="panel" data-display="overlay" data-position="left" id="sidebar">
+
 			<center><img src="images/logo.png"></center>
 			<br/><br/>
 			<ul data-role="listview">
-				<li data-icon="false"><a href="index.html" data-transition="none">Главная</a></li>
+				<li data-role="list-divider">Информация</li>
 				<li data-icon="false"><a href="content/main/author.html" data-transition="none">Об авторе</a></li>
 				<li data-icon="false"><a href="content/main/contact.html" data-transition="none">Контакты</a></li>
 				<li data-icon="false"><a href="content/main/donate.html" data-transition="none">Поддержать проект</a></li>
+				<li data-role="list-divider">Настройки</li>
+				<li data-icon="false"><a href="" data-transition="none">Шрифт</a></li>
+				<li data-icon="false"><a href="" data-transition="none">Убрать рекламу</a></li>
 				<li data-icon="delete" class=""><a data-rel="close">Закрыть панель</a></li>
-			</ul>
+			</ul>	
 		</div>
 
 		<ul data-role="listview"><!-- data-inset="true" -->
@@ -52,7 +56,7 @@
 				</a>
 			</li>
 			<li data-icon="false">
-				<a href="content/main/.html" data-transition="none" data-ajax="true">
+				<a href="content/main/program-training.html" data-transition="none" data-ajax="true">
 				<img src="images/icon/main/program-training.png">
 					<h2>Программы тренировок</h2>
 					<p>Готовые тренировки.</p>
