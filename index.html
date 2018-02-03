@@ -26,24 +26,24 @@
 
 	<div data-role="header">
 		<a href="#left-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Меню</a>
-		<h1>Меню</h1>
+		<h1>Категории</h1>
 	</div>
 
+	<!-- Выезжающая меню слева  -->
+	<div data-role="panel" id="left-panel" data-display="push" data-position="left" data-position-fixed="true" data-theme="a">
+
+		<center><img src="images/logo.png" width="200"></center>
+		<br/><br/>
+		<ul data-role="listview">
+			<li data-icon="false"><a href="content/main/contact.html" data-transition="none" data-ajax="false">Контакты</a></li>
+			<li data-icon="false"><a href="content/main/about.html" data-transition="none" data-ajax="false">О приложении</a></li>
+			<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оценить в Google Play</a></li>
+			<li data-icon="false"><a href="https://stretching-guru.ru" data-transition="none" data-ajax="false">Официальный сайт</a></li>
+		</ul>
+
+	</div>	
+
 	<div data-role="main" class="ui-content">
-
-		<!-- Выезжающая панель слева  -->
-		<div data-role="panel" id="left-panel" data-display="overlay" data-position="left" data-position-fixed="true" data-theme="a">
-
-			<center><img src="images/logo.png" width="200"></center>
-			<br/><br/>
-			<ul data-role="listview">
-				<li data-icon="false"><a href="content/main/contact.html" data-transition="none" data-ajax="false">Контакты</a></li>
-				<li data-icon="false"><a href="content/main/about.html" data-transition="none" data-ajax="false">О приложении</a></li>
-				<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a></li>
-				<li data-icon="false"><a href="https://stretching-guru.ru" data-transition="none" data-ajax="false">Официальный сайт</a></li>
-			</ul>
-
-		</div>
 
 		<!-- Всплывающее окно: Оставить отзыв -->
 		<div data-role="popup" id="PopupReviewApp" data-overlay-theme="a" data-theme="a" data-dismissible="false">
@@ -62,37 +62,44 @@
 		<ul data-role="listview">
 			<li data-icon="false">
 				<a href="content/exercise/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/exercise.png" width="80" height="">
+					<img src="images/icon/main/exercise.png" width="80" height="80">
 					<h2>Упражнения</h2>
 					<p>Для груди, рук, ног и др.</p>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="content/program-training/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/program-training.png" width="80" height="">
+					<img src="images/icon/main/program-training.png" width="80" height="80">
 					<h2>Программы тренировок</h2>
 					<p>Список готовых тренировок.</p>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="content/article/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/article.png" width="80" height="">
+					<img src="images/icon/main/article.png" width="80" height="80">
 					<h2>Статьи</h2>
 					<p>Полезные материалы.</p>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="content/free/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/free.png" width="80" height="">
+					<img src="images/icon/main/free.png" width="80" height="80">
 					<h2>Бесплатные материалы</h2>
 					<p>Загружай и развивайся.</p>
 				</a>
 			</li>
 			<li data-icon="false">
 				<a href="content/faq/list.html" data-transition="none" data-ajax="false">
-					<img src="images/icon/main/faq.png" width="80" height="">
+					<img src="images/icon/main/faq.png" width="80" height="80">
 					<h2>F.A.Q</h2>
 					<p>Ответы на вопросы.</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="https://vk.com/topic-78844828_36867209" rel="external" data-transition="none" data-ajax="false">
+					<img src="images/icon/main/idea.png" width="80" height="80">
+					<h2>Оставить идею</h2>
+					<p>Расскажите о ней ВКонтакте.</p>
 				</a>
 			</li>
 		</ul>
