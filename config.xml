@@ -2,8 +2,8 @@
 	<widget xmlns        = "http://www.w3.org/ns/widgets"
 		    xmlns:gap    = "http://phonegap.com/ns/1.0"
 		    id           = "stretching.guru"
-		    versionCode  = "8"
-		    version      = "1.0.7">
+		    versionCode  = "9"
+		    version      = "1.1">
 
 		    <!-- Название приложения -->
 		    <name>Растяжка</name>
@@ -16,9 +16,8 @@
 		    	Artem Sannikov
 		    </author>
 
-		    <!-- Иконки для платформы Android -->
+		    <!-- ###Иконки для платформы Android### -->
 			<platform name="android">
-				<!-- Иконки -->
 				<icon density="ldpi" src="res/icons/android/ldpi.png"/>
 				<icon density="mdpi" src="res/icons/android/mdpi.png"/>
 				<icon density="hdpi" src="res/icons/android/hdpi.png"/>
@@ -30,19 +29,25 @@
 			<!-- Стартовая страница -->
 			<content src="index.html"></content>
 
-			<!-- Разрешения -->
+			<!-- ###Разрешения### -->
 			<preference name="permissions" value="none"/>
+
+			<!-- Версия API  -->
+			<!--<preference name="android-minSdkVersion" value="19">-->
+			<preference name="android-targetSdkVersion" value="26" />
 	
 			<!-- разрешение для переноса приложения на SD карту -->
-			<!--<preference name="android-manifest/@android:installLocation" value="auto" />-->
 			<preference name="android-installLocation" value="auto" />
-
-			<!--<preference name="fullscreen" value="true" />-->
-			<preference name="AllowInlineMediaPlayback" value="true" />
-			<preference name="InAppBrowserStorageEnabled" value="true" />
 			
-			<!-- Whilelist plugin cordova -->
-			<plugin name="cordova-plugin-whitelist" spec="1" /> <!-- Для открытия внешних ссылок -->
+			<!--<preference name="fullscreen" value="true" />-->
+
+			<!-- разрешить воспроизведение медиафайлов html5 -->
+			<preference name="AllowInlineMediaPlayback" value="true" />
+
+			<!-- отмена автоматического воспроизведения -->
+			<preference name="MediaPlaybackRequiresUserAction" value="false" />
+			
+			<preference name="InAppBrowserStorageEnabled" value="true" />
 
 			<!-- Доступ к web сайтам -->
 			<access origin="*" />
@@ -55,5 +60,10 @@
 			<platform name="android">
 				<allow-intent href="market:*" />
 			</platform>
+
+			<!-- ###Плагины### -->
+
+			<!-- Для открытия внешних ссылок -->
+			<plugin name="cordova-plugin-whitelist" spec="1" /> 
 
 	</widget>
