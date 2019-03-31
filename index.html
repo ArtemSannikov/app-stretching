@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Растяжка</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/my-theme.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Open sidebar (left panel) on swipe -->
+	<script type="text/javascript" src="js/swipe-panel.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="js/admob.js"></script>
+	<!-- cordova js -->
+	<script src="cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home" data-theme="a">
+
+	<div data-role="header">
+		<a href="#left-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Меню</a>
+		<h1>Категории</h1>
+	</div>
+
+	<!-- Выезжающая меню слева  -->
+	<div data-role="panel" id="left-panel" data-display="push" data-position="left" data-position-fixed="true" data-theme="a">
+
+		<center><img src="images/logo.png" width="200" style="margin: 0 0 40px 0;"></center>
+
+		<ul data-role="listview">
+
+			<li data-icon="false">
+				<a href="content/main/about.html" data-transition="none" data-ajax="false">Информация о приложении</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="content/main/contact.html" data-transition="none" data-ajax="false">Контактная информация</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="content/main/donate.html" data-transition="none" data-ajax="false">Поддержать проект</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="https://stretching-guru.ru" data-transition="none" data-ajax="false">Официальный сайт</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="https://play.google.com/store/apps/details?id=stretching.guru" data-transition="none" data-ajax="false">Оценить в Play Маркет</a>
+			</li>
+
+		</ul>
+
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<!-- Отображение разделов -->
+		<ul data-role="listview">
+
+			<li data-icon="false">
+				<a href="content/exercise/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/exercise.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Упражнения</h2>
+					<p>Для груди, рук, ног и др.</p>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="content/free/list.html" data-transition="none" data-ajax="false">
+					<img src="images/icon/free.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Бесплатные материалы</h2>
+					<p>Загружай и развивайся.</p>
+				</a>
+			</li>
+
+			<li data-icon="arrow-r">
+				<a href="https://stretching-guru.ru/articles/" rel="external" data-transition="none" data-ajax="false">
+					<img src="images/icon/article.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Статьи</h2>
+					<p>Расширяй кругозор.</p>
+				</a>
+			</li>
+
+			<li data-icon="arrow-r">
+				<a href="https://vk.com/topic-159715056_36932202" rel="external" data-transition="none" data-ajax="false">
+					<img src="images/icon/idea.svg" width="56" height="56" style="padding: 12px 12px;">
+					<h2>Оставить идею</h2>
+					<p>Расскажите о ней ВКонтакте.</p>
+				</a>
+			</li>
+
+		</ul>
+
+	</div>
+
+</div>
+
+</body>
+</html>
